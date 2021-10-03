@@ -6,14 +6,13 @@
 
     <style>
     #top{
-      width: fit-content;
-      height: fit-content;
+
 
       display: grid;
-      grid-template-columns:repeat(7,1fr) 20PX;
+      grid-template-columns:100px repeat(6,1fr) auto;
       grid-column-gap: 5px;
       border-bottom: solid;
-      padding-bottom: 5px;
+      padding-bottom: 0px;
     }
     #down{
       width: fit-content;
@@ -32,9 +31,12 @@
     #down ol li{
       margin-bottom: 10px;
     }
-    #home{
-      color: tan;
-      font-weight: bold;
+    #logout{
+      width: 40pt;
+      height: 12pt;
+      font-size: 4px;
+      padding: 0;
+      margin: 0;
     }
  </style>
 
@@ -43,8 +45,7 @@
     <body>
     <div id = "top">
       <div id ="home">
-
-          <a href = "index.html"><img src="넥슨.png", width="100", height="30"></img></a>
+        <a href = "index.html"><img src="넥슨.png", width=100px, height = 25px ></img></a>
 
       </div>
       <div>DB</div>
@@ -53,7 +54,11 @@
       <div>PURNISH</div>
       <div>RECOVERY</div>
       <div>SETTING</div>
-      <div style="font-size: 6px;">로그아웃</div>
+      <div>
+        <button id = 'logout', onclick="alert('로그아웃이 되야 되는데 그건 언젠가 만들겠지...')">
+          로그아웃
+        </button>
+      </div>
     </div>
     <div id = "down">
 
