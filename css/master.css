@@ -1,0 +1,31 @@
+.container{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 50px minmax(400px,auto) 20px;
+  grid-template-areas:
+  "header header"
+  "side main"
+  "footer footer";
+}
+.header{
+  grid-area: header;
+  border-bottom: solid;
+}
+.side{
+  grid-area: side;
+  border-right: solid;
+  font-size: 7px;
+  }
+.side ul{
+  padding-left: 0;
+}
+.main{
+  grid-area: main;
+}
+.footer{
+  grid-area: footer;
+  border-top: solid;
+}
+#top div{
+  display:inline;
+}

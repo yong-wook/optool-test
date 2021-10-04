@@ -1,74 +1,47 @@
 <!DOCTYPE html>
-<html lang="ko" dir="ltr">
- <head>
-   <meta charset="utf-8">
-   <title>운영툴을 만들어봅시다.</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>운영툴을 만들어봅시다.</title>
+    <link rel="stylesheet" href="css/master.css">
 
-    <style>
-    #top{
+  </head>
+  <body>
+<div class="container">
 
 
-      display: grid;
-      grid-template-columns:100px repeat(6,1fr) auto;
-      grid-column-gap: 5px;
-      border-bottom: solid;
-      padding-bottom: 0px;
-    }
-    #down{
-      width: fit-content;
-      height: fit-content;
-      display: grid;
-      grid-template-columns:100px 1fr;
+    <div class="header">
+      <div id = "top">
+        <div id ="home">
+          <a href = "index.html"><img src="넥슨.png", width=100px, height = 25px ></img></a>
 
-    }
-    #down ol{
-      border-right: solid;
-      font-size: 10px;
-      margin-left: 15px;
-      margin-top: 0;
-      padding-left: 0;
-    }
-    #down ol li{
-      margin-bottom: 10px;
-    }
-    #logout{
-      width: 40pt;
-      height: 12pt;
-      font-size: 4px;
-      padding: 0;
-      margin: 0;
-    }
- </style>
-
- </head>
-
-    <body>
-    <div id = "top">
-      <div id ="home">
-        <a href = "index.html"><img src="넥슨.png", width=100px, height = 25px ></img></a>
-
-      </div>
-      <div>DB</div>
-      <div>LOG</div>
-      <div>NOTICE</div>
-      <div>PURNISH</div>
-      <div>RECOVERY</div>
-      <div>SETTING</div>
-      <div>
-        <button id = 'logout', onclick="alert('로그아웃이 되야 되는데 그건 언젠가 만들겠지...')">
-          로그아웃
-        </button>
+        </div>
+        <div>
+          <a href="db.html">DB</a>
+        </div>
+        <div>
+          <a href="">LOG</a>
+        </div>
+        <div>NOTICE</div>
+        <div>PURNISH</div>
+        <div>RECOVERY</div>
+        <div>SETTING</div>
+        <div>
+          <button id = 'logout', onclick="alert('로그아웃이 되야 되는데 그건 언젠가 만들겠지...')">
+            로그아웃
+          </button>
+        </div>
       </div>
     </div>
-    <div id = "down">
-
-        <ol>
-          <li>사이드 메뉴가 들어와야 하지만 여기는 메인이니까 아무것도 안보이게 할거임.지금은 공간만 있는곳. 상단을 누르면 뭔가 나오겠지...</a></li>
-        </ol>
-        <div>
-          실제 내용은 여기에...  <br>뭔<br>가<br> 쓸<br>게<br> 없<br>기<br>때<br>문<br>에<br> <br>그<br>냥<br> <br>길<br>게<br>.<br>.<br>.
-        </div>
-
-      </div>
-    </body>
-  </html>
+    <div class="side">
+      사이드
+    </div>
+    <div class="main">
+      메인
+    </div>
+    <div class="footer">
+      푸터
+    </div>
+</div>
+  </body>
+</html>
