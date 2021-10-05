@@ -10,21 +10,26 @@
 .header{
   grid-area: header;
   border-bottom: solid;
-}
+  }
 .side{
   grid-area: side;
   border-right: solid;
-  font-size: 7px;
-  }
+  font-size: 15px;
+}
 .side ul{
   padding-left: 0;
+  }
+.side ul li{
+  margin-top: 20px;
 }
+
 .main{
   grid-area: main;
 }
 .footer{
   grid-area: footer;
   border-top: solid;
+
 }
 #top div{
   display:inline;
